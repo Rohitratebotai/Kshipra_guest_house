@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
         <h1 className="text-2xl font-bold text-gray-800 mb-6">Privacy Policy</h1>
 
         <p className="text-gray-600 mb-4">
-          At Ksipra Guest House, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you interact with our website or make use of our services. By using our website or booking a stay with us, you agree to the practices described below.
+          At <strong>Kshipra Guest House, Koti Mawga, Himachal Pradesh – 171210</strong>, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you interact with our website or make use of our services. By using our website or booking a stay with us, you agree to the practices described below.
         </p>
 
         <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-2">Information We Collect</h2>
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
           <a href="mailto:kshipraguesthouse@gmail.com" className="text-blue-600 hover:underline">
             kshipraguesthouse@gmail.com
           </a>{' '}
-          or call us at <span className="font-medium">+91 8878878086</span>.
+          or call us at <span className="font-medium">+91 93503 88959, +91 94186 32179</span>.
         </p>
       </div>
     </div>

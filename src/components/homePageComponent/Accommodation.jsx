@@ -5,24 +5,24 @@ import { Navigation } from "swiper/modules";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import d_img1 from "../../assets/kshipra_guest_homes/img_20.jpeg";
-import p_img5 from "../../assets/kshipra_guest_homes/img_10.jpeg";
+import d_img1 from "../../assets/kdn/img_11.jpg";
+// import p_img5 from "../../assets/kdn/img_10.jpg";
 
 const rooms = [
 	{
-		name: "standard Room",
+		name: "Duplex Cottages",
 		images: [d_img1],
 		// description: "A cozy and comfortable room offering essential amenities for a pleasant stay. Perfect for solo travelers or couples.",
 		// amenities: ["Queen Size Bed", "Smart TV", "Free Wifi"],
 		// category: "Budget-Friendly",
 	},
-	{
-		name: "Dormitory Room",
-		images: [p_img5],
-		// description: "An affordable option with all basic facilities, ideal for budget-conscious travelers seeking comfort and convenience.",
-		// amenities: ["Queen Size Bed", "Free Wifi", "Non Attached Bathroom"],
-		// category: "Budget-Friendly",
-	}
+	// {
+	// 	name: "Dormitory Room",
+	// 	images: [p_img5],
+	// 	description: "An affordable option with all basic facilities, ideal for budget-conscious travelers seeking comfort and convenience.",
+	// 	amenities: ["Queen Size Bed", "Free Wifi", "Non Attached Bathroom"],
+	// 	category: "Budget-Friendly",
+	// }
 ];
 
 export function Accommodation() {
@@ -44,53 +44,22 @@ export function Accommodation() {
 	};
 
 	return (
-		<div className="px-4 sm:px-8 md:px-20 lg:px-40 mb-20 text-white">
+		<div className="px-4 sm:px-8 md:px-20 lg:px-40 mb-20">
 			<h1 className="text-center text-2xl sm:text-3xl font-light mb-8">
 				Accommodation
 			</h1>
 
 			{/* Filter Buttons */}
-			{/* <div className="flex justify-center gap-4 mb-8">
-				<button
-					className={`py-2 px-4 rounded-lg transition-all ${
-						activeCategory === "All"
-							? "bg-white text-[#29b497]"
-							: "bg-[#29b497] text-white"
-					}`}
-					onClick={() => filterRooms("All")}
-				>
-					All Rooms
-				</button>
-				<button
-					className={`py-2 px-4 rounded-lg transition-all ${
-						activeCategory === "Luxurious"
-							? "bg-white text-[#29b497]"
-							: "bg-[#29b497] text-white"
-					}`}
-					onClick={() => filterRooms("Luxurious")}
-				>
-					Our Luxurious Rooms
-				</button>
-				<button
-					className={`py-2 px-4 rounded-lg transition-all ${
-						activeCategory === "Budget-Friendly"
-							? "bg-white text-[#29b497]"
-							: "bg-[#29b497] text-white"
-					}`}
-					onClick={() => filterRooms("Budget-Friendly")}
-				>
-					Budget-Friendly Rooms
-				</button>
-			</div> */}
+			
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-10">
+			<div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 md:gap-10">
 				{filteredRooms.map((room, index) => (
 					<div
 						key={index}
 						className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full transition-transform transform hover:scale-105"
 					>
 						{/* Room Image */}
-						<div className="relative h-48 sm:h-56 md:h-64 lg:h-72">
+						<div className="relative h-48 sm:h-56 md:h-64 lg:h-90">
 							<img
 								src={room.images[0]} // Display the first image of the room
 								alt={room.name}
@@ -102,8 +71,8 @@ export function Accommodation() {
 						</div>
 
 						{/* Room Details */}
-						<div className="p-4 sm:p-6 flex-grow">
-							<h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">
+						<div className="p-4 sm:p-4 flex-grow">
+							<h3 className="text-lg space-x-1  text-center uppercase sm:text-xl font-semibold text-gray-800 ">
 								{room.name}
 							</h3>
 							{/* <p className="text-gray-600 text-xs sm:text-sm mb-4">
@@ -133,14 +102,14 @@ export function Accommodation() {
 						</div>
 
 						{/* View More Button */}
-						<div className="p-4">
+						{/* <div className="p-4">
 							<button
 								className="w-full bg-[#29b497] text-white py-2 rounded-lg hover:bg-[#218a78] transition-all text-sm sm:text-base"
 								onClick={roomNavi} // Navigates to /room
 							>
 								View More
 							</button>
-						</div>
+						</div> */}
 					</div>
 				))}
 			</div>

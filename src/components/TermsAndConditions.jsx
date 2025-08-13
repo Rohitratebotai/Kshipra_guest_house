@@ -15,80 +15,88 @@ const TermsAndConditions = () => {
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms and Conditions</h1>
 
         <p className="text-gray-700 leading-relaxed mb-6">
-          Welcome to Ksipra Guest House. These Terms and Conditions outline the rules and regulations for the use of our website and services.
-          By accessing or using our website, you agree to comply with these terms. Please do not continue to use the site if you do not agree to any part of them.
+          Welcome to Kabana De Nature. These Terms and Conditions outline the rules and regulations for the use of our website
+          and services. By accessing or using our website or making a reservation, you agree to comply with these terms.
+          Please refrain from using the site or services if you disagree with any part of these terms.
         </p>
 
         <Section title="License">
           <p>
-            Unless otherwise stated, Ksipra Guest House and/or its licensors own the intellectual property rights for all material on this website.
-            You may access our site for your personal use, subject to the restrictions set forth in these terms and conditions.
+            Unless otherwise stated, Kabana De Nature and/or its licensors own the intellectual property rights for all material
+            on this website. You may access the website for your personal use, subject to the restrictions set forth in these
+            terms and conditions.
           </p>
         </Section>
 
         <Section title="User Comments">
           <p>
-            Visitors may post reviews or comments. Ksipra Guest House does not pre-screen or endorse comments before they appear on the website.
-            The views expressed in comments belong solely to the individual and do not reflect our views or values.
+            Guests and visitors may post reviews or comments on our platform. Kabana De Nature does not pre-screen or moderate
+            comments before they are posted. The opinions expressed belong solely to the individuals and do not necessarily reflect
+            our views or values.
           </p>
         </Section>
 
         <Section title="Hyperlinking to Our Content">
           <p>
-            Government agencies, search engines, news organizations, and online directories may link to our website without prior written approval.
-            Other organizations, such as NGOs or community groups, may link to our homepage upon receiving permission.
+            Government agencies, search engines, news outlets, and online directories may link to our website without prior approval.
+            Other organizations, such as NGOs or local community groups, may link to our homepage upon request and approval.
           </p>
         </Section>
 
         <Section title="iFrames">
           <p>
-            You may not create frames around our webpages or use techniques that alter the visual presentation or appearance of our site without express written permission.
+            You may not create frames around our webpages or modify the visual presentation or layout of our website without
+            explicit written permission.
           </p>
         </Section>
 
         <Section title="Content Liability">
           <p>
-            We are not responsible for any content that appears on websites that link to or from our website. You agree to protect and defend us against all claims arising on your site.
-            No link(s) should appear on any site that may be interpreted as defamatory, obscene, or criminal, or which infringes any third-party rights.
+            We are not responsible for any content that appears on external websites linking to or from Kabana De Nature.
+            You agree to protect us from any claims that arise from your website if you link to ours. Links must not contain
+            content that is unlawful, defamatory, or violates any third-party rights.
           </p>
         </Section>
 
         <Section title="Reservation of Rights">
           <p>
-            We reserve the right to request that you remove all links or any particular link to our website. By continuing to link to our website, you agree to be bound by these terms and future updates.
+            We reserve the right to request removal of any or all links to our website. By continuing to link to our site, you
+            agree to these terms and any future changes to them.
           </p>
         </Section>
 
         <Section title="Removal of Links">
           <p>
-            If you find any link on our website that is offensive or inappropriate, you may contact us. While we will consider requests to remove links, we are not obligated to do so or to respond directly.
+            If you find any link on our site that you believe is inappropriate, feel free to contact us. We will review all requests
+            for link removal, but we are not obligated to respond or take action unless legally required.
           </p>
         </Section>
 
         <Section title="Disclaimer">
           <p className="mb-2">
-            To the maximum extent permitted by law, we exclude all warranties and representations relating to our website and the use of our services.
-            Nothing in this disclaimer will:
+            To the fullest extent permitted by law, we exclude all warranties and representations related to our website and services.
+            This disclaimer does not:
           </p>
           <ul className="list-disc pl-6 text-gray-600 space-y-1">
             <li>Limit or exclude liability for death or personal injury</li>
             <li>Limit or exclude liability for fraud or fraudulent misrepresentation</li>
-            <li>Limit any liabilities in any way not permitted under applicable law</li>
-            <li>Exclude any liabilities that may not be excluded under applicable law</li>
+            <li>Limit any liabilities in ways not permitted under applicable law</li>
+            <li>Exclude any liabilities that cannot be excluded under applicable law</li>
           </ul>
         </Section>
 
         <Section title="Contact Us">
           <p>
-            Have questions or need assistance? <br /> Reach out to us at{' '}
-            <a href="mailto:ksipraguesthouse@gmail.com" className="text-blue-600 underline">
-              ksipraguesthouse@gmail.com
+            Have questions or need help? <br /> Contact us at{' '}
+            <a href="mailto:kabanadenature@gmail.com" className="text-blue-600 underline">
+              kabanadenature@gmail.com
             </a>{' '}
-            <br /> or call <span className="font-medium">+91 8878878086</span>.
+            <br /> or call <span className="font-medium">+91 93503 88959, +91 94186 32179</span>.
           </p>
         </Section>
       </div>
     </div>
+
 
   );
 };

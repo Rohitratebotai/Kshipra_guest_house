@@ -38,13 +38,13 @@ function Header() {
       <header
         className={`
           fixed left-0 top-0 w-full z-[100] transition-all duration-300
-          bg-[var(--color-primary)] md:bg-[var(--color-nav-fixed)]
+         bg-[var(--color-nav-fixed)]
           shadow-md
         `}
       >
         <div className="text-white w-full font-poppins">
           <div className="!container !flex !h-16 !justify-between !items-center !mx-auto !px-4 !py-4">
-            
+
             {/* Hamburger Menu (Left Side on Mobile) */}
             <button
               className="text-white md:!hidden focus:!outline-none"
@@ -73,24 +73,24 @@ function Header() {
               </HashLink>
             </nav>
 
-                  {isMenuOpen && location.pathname !== "" && (
-                    <div className="md:!hidden">
-                    <a
-                      href="https://booking.waterfrontresort.in/hotel/hotel-details?hotel_id="
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={closeMenu}
-                      className="px-4 py-2 bg-white text-black rounded-lg text-sm"
-                    >
-                      Book Now
-                    </a>
-                    </div>
-                  )}
-                  </div>
-                </div>
-                </header>
+            {isMenuOpen && location.pathname !== "" && (
+              <div className="md:!hidden">
+                <a
+                  href="https://booking.kabanadenatureresort.com/hotel/hotel-details?hotel_id=96"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeMenu}
+                  className="px-4 py-2 bg-white text-black rounded-lg text-sm"
+                >
+                  Book Now
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </header>
 
-                {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
         <div className="md:!block !fixed !inset-0 bg-[var(--color-primary)] !pt-16 !z-[99]">
           <div className="!flex !flex-col !items-center !pt-10 !space-y-10 !text-xl">
@@ -108,7 +108,7 @@ function Header() {
             </HashLink>
             <HashLink smooth to="/#contact" onClick={closeMenu} scroll={handleScrollOffset} className="text-white">
               Contact Us
-            </HashLink> 
+            </HashLink>
           </div>
         </div>
       )}

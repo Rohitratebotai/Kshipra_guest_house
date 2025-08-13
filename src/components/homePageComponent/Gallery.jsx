@@ -17,28 +17,32 @@ import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
 // Import images
-import img1 from '../../assets/kshipra_guest_homes/img_1.jpeg';
-import img2 from '../../assets/kshipra_guest_homes/img_17.jpeg';
-import img3 from '../../assets/kshipra_guest_homes/img_19.jpeg';
-import img4 from '../../assets/kshipra_guest_homes/img_6.jpeg';
-import img5 from '../../assets/kshipra_guest_homes/img_12.jpeg';
-import img6 from '../../assets/kshipra_guest_homes/img_11.jpeg';
-import img7 from '../../assets/kshipra_guest_homes/img_13.jpeg';
-import img8 from '../../assets/kshipra_guest_homes/img_18.jpeg';
-import img9 from '../../assets/kshipra_guest_homes/img_9.jpeg';
-import img10 from '../../assets/kshipra_guest_homes/img_20.jpeg';
-import img12 from '../../assets/kshipra_guest_homes/img_15.jpeg';
-import img13 from '../../assets/kshipra_guest_homes/img_2.jpeg';
-import img14 from '../../assets/kshipra_guest_homes/img_3.jpeg';
-import img15 from '../../assets/kshipra_guest_homes/img_5.jpeg';
-import img16 from '../../assets/kshipra_guest_homes/img_4.jpeg';
-import img18 from '../../assets/kshipra_guest_homes/img_14.jpeg';
-import img17 from '../../assets/kshipra_guest_homes/img_16.jpeg';
-import img19 from '../../assets/kshipra_guest_homes/img_17.jpeg';
-
+import img1 from '../../assets/kdn/img_1.jpg';
+import img2 from '../../assets/kdn/img_17.jpg';
+import img3 from '../../assets/kdn/img_19.jpg';
+import img4 from '../../assets/kdn/img_6.jpg';
+import img5 from '../../assets/kdn/img_12.jpg';
+import img6 from '../../assets/kdn/img_11.jpg';
+import img7 from '../../assets/kdn/img_13.jpg';
+import img8 from '../../assets/kdn/img_18.jpg';
+import img9 from '../../assets/kdn/img_9.jpg';
+import img10 from '../../assets/kdn/img_20.jpg';
+import img12 from '../../assets/kdn/img_15.jpg';
+import img13 from '../../assets/kdn/img_2.jpg';
+import img14 from '../../assets/kdn/img_3.jpg';
+import img15 from '../../assets/kdn/img_5.jpg';
+import img16 from '../../assets/kdn/img_4.jpg';
+import img18 from '../../assets/kdn/img_14.jpg';
+import img17 from '../../assets/kdn/img_16.jpg';
+import img19 from '../../assets/kdn/img_17.jpg';
+import img20 from '../../assets/kdn/img_21.jpg';
+import img21 from '../../assets/kdn/img_22.jpg';
+import img22 from '../../assets/kdn/img_23.jpg';
+import img23 from '../../assets/kdn/img_24.jpg';
+import img24 from '../../assets/kdn/img_25.jpg';
 
 export function Gallery() {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img12, img13, img14, img15, img16, img17, img18, img19];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img5];
 
   // Group images differently based on screen size
   const mobileGroupedImages = [];
@@ -47,8 +51,8 @@ export function Gallery() {
   }
 
   const desktopGroupedImages = [];
-  for (let i = 0; i < images.length; i += 6) {
-    desktopGroupedImages.push(images.slice(i, i + 6));
+  for (let i = 0; i < images.length; i += 8) {
+    desktopGroupedImages.push(images.slice(i, i + 8));
   }
 
   const [isMobile, setIsMobile] = useState(false);
@@ -70,8 +74,8 @@ export function Gallery() {
   const lightboxRef = useRef(null);
 
   return (
-    <div className="container mx-auto px-4 md:px-60 bg-back py-8">
-      <h1 className="text-center text-3xl font-light mb-8 text-white">GALLERY</h1>
+    <div className="container mx-auto px-4 md:px-36 bg-back py-8">
+      <h1 className="text-center text-3xl font-light mb-8 ">GALLERY</h1>
 
       {/* LightGallery Wrapper */}
       <LightGallery
@@ -84,14 +88,15 @@ export function Gallery() {
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           navigation
           modules={[Pagination, Navigation]}
           className="mySwiper"
+          loop={true}
         >
           {groupedImages.map((group, index) => (
             <SwiperSlide key={index}>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-back">
+              <div className="grid grid-cols-1 sm:grid-cols-4 gap-4  p-4 rounded-lg shadow-lg">
                 {group.map((src, imgIndex) => (
                   <a key={imgIndex} href={src} data-src={src} className="lightbox-item">
                     <div className="aspect-square overflow-hidden rounded-lg">

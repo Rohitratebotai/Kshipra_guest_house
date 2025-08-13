@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home, AboutUs, Facilities, Gallery, Room, ContactUs, ErrorPage } from './index'
+import { Home, AboutUs,  Gallery, Room, ContactUs, ErrorPage } from './index'
 import Layout from '../components/Layout'
 import PrivacyPolicy from '../components/PrivacyPolicy'
 import TermsAndConditions from '../components/TermsAndConditions'
 import CancellationRefundPolicy from '../components/CancellationandRefund'
+import { Facilities } from '../components/homePageComponent/Facilities'
 
 function AppRoutes() {
     return (

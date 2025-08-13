@@ -3,11 +3,11 @@ import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp Icon
 
 import { useNavigate } from "react-router-dom";
 
-import img1 from "../assets/eventpage/1.jpeg";
-import img2 from "../assets/eventpage/2.jpeg";
-import img3 from "../assets/eventpage/3.jpeg";
-import img4 from "../assets/eventpage/4.jpeg";
-import img5 from "../assets/eventpage/5.jpeg";
+import img1 from "../assets/eventpage/1.jpg";
+import img2 from "../assets/eventpage/2.jpg";
+import img3 from "../assets/eventpage/3.jpg";
+import img4 from "../assets/eventpage/4.jpg";
+import img5 from "../assets/eventpage/5.jpg";
 
 export function Events() {
   const images = [img1, img2, img3, img4, img5];

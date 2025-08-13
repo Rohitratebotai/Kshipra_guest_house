@@ -7,8 +7,8 @@ import { Navigation } from "swiper/modules";
 import { FaWhatsapp } from "react-icons/fa";
 import BookingEngine from "../components/bookingEngine/BookingEngine";
 
-import d_img1 from "../assets/kshipra_guest_homes/img_1.jpeg";
-import p_img5 from "../assets/kshipra_guest_homes/img_5.jpeg";
+import d_img1 from "../assets/kdn/img_1.jpg";
+import p_img5 from "../assets/kdn/img_5.jpg";
 
 const rooms = [
   {

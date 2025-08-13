@@ -7,27 +7,27 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 import ContactForm from "./ContactForm";
 
-export function ContactUs() { 
+export function ContactUs() {
   return (
     <>
       <div className="px-4 md:px-20 lg:px-40 py-10">
-        <h1 className="text-center text-3xl font-light mb-8 text-white">
+        <h1 className="text-center text-3xl font-light mb-8 ">
           Contact
         </h1>
 
         {/* Contact Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Address Card */}
-          <div className="bg-nav-fixed min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
+          <div className="bg-[#42c0b6] min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
             <PiMapPinAreaBold className="h-14 w-20" />
             <h1 className="text-center text-3xl font-light mt-4">Address</h1>
             <div className="text-center mt-3">
-              <p> The Kshipra Guest House	<br />Sunshine Towers, Bhatwal Talkies 3, Ashok Nagar, Madhav Nagar, Ujjain, Madhya Pradesh 456010</p>
+              <p>Kabana De Nature	<br />Koti Mawga, Himachal Pradesh 173101</p>
             </div>
           </div>
 
           {/* Reservation Card */}
-          <div className="bg-nav-fixed min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
+          <div className="bg-[#42c0b6] min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
             <MdOutlineDoorSliding className="h-14 w-20" />
             <h1 className="text-center text-3xl font-light mt-4">
               Reservation
@@ -35,12 +35,13 @@ export function ContactUs() {
             <div className="text-center mt-3">
               <p>
                 Call Us: <br />
-                <a href="tel:+91 8878878086" className="text-[#white] hover:underline">
-                  +91 8878878086
+                <a href="tel:+91 9350388959" className="text-[#white] hover:underline">
+                  +91 93503 88959
+                </a> <br />
+                {' '}
+                <a href="tel:+91 9418632179" className="text-[#white] hover:underline">
+                  +91 94186 32179
                 </a>
-                {/* <a href="tel:+917902915555" className="text-[#white] hover:underline">
-       +91 9823728809
-    </a> */}
                 <br />
 
               </p>
@@ -48,14 +49,14 @@ export function ContactUs() {
           </div>
 
           {/* Contact Card */}
-          <div className="bg-nav-fixed min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
+          <div className="bg-[#42c0b6] min-h-[250px] p-10 rounded-xl flex flex-col items-center justify-center text-white hover:bg-[#29b497]">
             <MdOutlineContacts className="h-14 w-20" />
             <h1 className="text-center text-3xl font-light mt-4">Contact</h1>
             <div className="text-center mt-3">
               <p>
                 Email Us: <br />
-                <a href="mailto:kshipraguesthouse@gmail.com" className="text-[#white ] hover:underline">
-                kshipraguesthouse@gmail.com
+                <a href="mailto:kabana@tripsntourism.com" className="text-[#white ] hover:underline">
+                  kabana@tripsntourism.com
                 </a>
               </p>
             </div>
@@ -97,10 +98,9 @@ export function ContactUs() {
       <div className="w-full mt-4 px-4 pb-10">
         <iframe
           className="h-80 sm:h-96 md:h-[500px] lg:h-[600px] w-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234739.50299935087!2d75.48319289453124!3d23.177325800000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963750061939871%3A0x9f1fadb6c05bdd85!2sKshipra%20guest%20house!5e0!3m2!1sen!2sin!4v1751868644261!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3424.791450197069!2d77.30817797558558!3d30.864513374520826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDUxJzUyLjMiTiA3N8KwMTgnMzguNyJF!5e0!3m2!1sen!2sin!4v1753103946228!5m2!1sen!2sin"
           loading="lazy"
           allowFullScreen
-
         ></iframe>
       </div>
     </>

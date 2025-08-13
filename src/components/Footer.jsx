@@ -5,12 +5,12 @@ function Footer() {
   const navigate = useNavigate();
 
   return (
-    <footer className="w-full bg-nav-fixed text-white py-6 px-4">
+    <footer className="w-full bg-[#42c0b6] text-white py-6 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-sm">
         {/* Left Section */}
         <div className="flex flex-col md:items-start">
           <p className="opacity-90 mb-1">
-            © <span className="font-medium">Kshipra Guest House</span>. All Rights Reserved.
+            © <span className="font-medium">Kabana De Nature</span>. All Rights Reserved.
           </p>
           <p className="opacity-90">
             Powered by:{" "}
@@ -29,21 +29,21 @@ function Footer() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-6">
           <button
             onClick={() => navigate("privacy-policy")}
-            className="flex items-center gap-2 text-blue-400 hover:text-white transition duration-200"
+            className="flex items-center gap-2 text-white transition duration-200"
           >
             <FaShieldAlt className="text-base" />
             <span className="font-medium">Privacy Policy</span>
           </button>
           <button
             onClick={() => navigate("terms-and-conditions")}
-            className="flex items-center gap-2 text-blue-400 hover:text-white transition duration-200"
+            className="flex items-center gap-2 text-white transition duration-200"
           >
             <FaFileContract className="text-base" />
             <span className="font-medium">Terms & Conditions</span>
           </button>
           <button
             onClick={() => navigate("cancellation-and-refund-policy")}
-            className="flex items-center gap-2 text-blue-400 hover:text-white transition duration-200"
+            className="flex items-center gap-2 text-white transition duration-200"
           >
             <FaUndoAlt className="text-base" />
             <span className="font-medium">Refund Policy</span>
